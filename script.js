@@ -17,7 +17,7 @@ async function cargarActividades() {
     actividadesDia.forEach(act => {
       const divAct = document.createElement('div');
       divAct.classList.add('actividad');
-      divAct.textContent = `${act.nombre} - ${act.hora} (${act.lugar})`;
+      divAct.textContent = `🗓 ${act.nombre}  ⏰ ${act.hora}  📍 ${act.lugar}`;
 
       divAct.addEventListener('click', () => mostrarDetalle(act));
       divDia.appendChild(divAct);
@@ -29,8 +29,8 @@ async function cargarActividades() {
 
 function mostrarDetalle(actividad) {
   document.getElementById('modal-titulo').textContent = actividad.nombre;
-  document.getElementById('modal-hora').textContent = "Hora: " + actividad.hora;
-  document.getElementById('modal-lugar').textContent = "Lugar: " + actividad.lugar;
+  document.getElementById('modal-hora').textContent = "⏰ " + actividad.hora;
+  document.getElementById('modal-lugar').textContent = "📍 " + actividad.lugar;
   document.getElementById('modal-detalle').textContent = actividad.detalle;
 
   document.getElementById('modal').style.display = "block";
