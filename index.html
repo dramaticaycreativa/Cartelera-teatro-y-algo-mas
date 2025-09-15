@@ -8,16 +8,30 @@
   <!-- Fuentes de Google -->
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=League+Gothic&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome (iconos oficiales redes sociales) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <!-- Estilos -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Cartelera Cultural</h1>
-  <p>Actividades del miércoles 17 a domingo 21 de Septiembre</p>
+  <!-- ====== HEADER ====== -->
+  <header>
+    <div class="logo-contenedor">
+      <img src="logo.png" alt="Logo Cartelera Cultural" class="logo">
+      <div>
+        <h1>🎭 Cartelera Cultural</h1>
+        <p>Actividades de miércoles a domingo</p>
+      </div>
+    </div>
+  </header>
 
-  <div id="cartelera"></div>
+  <!-- ====== CONTENIDO PRINCIPAL ====== -->
+  <main>
+    <div id="cartelera"></div>
+  </main>
 
-  <!-- Modal para detalles -->
+  <!-- ====== MODAL DETALLES ====== -->
   <div id="modal" class="modal">
     <div class="modal-content">
       <span id="cerrar">&times;</span>
@@ -27,6 +41,23 @@
       <p id="modal-detalle"></p>
     </div>
   </div>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p>Sígueme en redes sociales:</p>
+    <div class="social">
+      <a href="https://instagram.com/gramaticaycreativa" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://tiktok.com/@gramaticaycreativa" target="_blank">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://youtube.com/@gramaticaycreativa" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+    <p class="copy">&copy; 2025 Cartelera Cultural | Creado por @gramaticaycreativa</p>
+  </footer>
 
   <!-- Script -->
   <script src="script.js"></script>
