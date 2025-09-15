@@ -1,23 +1,30 @@
 [
   {
-    "dia": "Miércoles",
-    "nombre": "Taller de Danza",
-    "hora": "18:00",
-    "lugar": "Casa de la Cultura",
-    "detalle": "Clase abierta de danza contemporánea para todo público."
+    "dia": "Miércoles 17",
+    "nombre": "Ciclo de cine|Fargo",
+    "hora": "21:00",
+    "lugar": "Teatro el Pasillo-Jose de la Iglesias 1190",
+    "detalle": "Sinopsis: Un vendedor de autos con problemas financieros decide secuestrar a su esposa para pedirle dinero a su suegro. Entradas en EntradaWeb"
+  },
+   {
+    "dia": "Jueves 18",
+    "nombre": "Suerte de Pinos - Estreno Nacional",
+    "hora": "21:15",
+    "lugar": "Cine auditorio Julio Lencina- Independencia esq. Italia",
+    "detalle": "Sinopsis: un pueblo remoto en el norte de España, una casa de familia sigue cerrada con tres candados. Hace 70 años, en la plaza donde cada año clavan un pino en una fiesta medieval, mataron a una bisabuela y a su hija. Doble femicidio a la vista de todos, silenciados hasta ahora. Entradas gral. $2800. Jub/Est. $1400."
   },
   {
-    "dia": "Viernes",
-    "nombre": "Concierto de Jazz",
-    "hora": "20:00",
-    "lugar": "Teatro Principal",
-    "detalle": "Banda local con invitados especiales."
+    "dia": "Viernes 19",
+    "nombre": "Musica en el Tizon: Samba Pue",
+    "hora": "21:00",
+    "lugar": "Centro Cultural Hector Tizon- Hipolito Yrigoyen 1302",
+    "detalle": "Entradas anticipadas al 3885914204"
   },
   {
-    "dia": "Domingo",
-    "nombre": "Feria de Arte",
-    "hora": "10:00",
-    "lugar": "Plaza Central",
+    "dia": "Sábaado 20",
+    "nombre": "Obra de treatro: La Iniciacion de Jorge Acamme",
+    "hora": "21:30",
+    "lugar": "Teatro el Pasillo-Jose de la Iglesias 1190",
     "detalle": "Exposición de artistas locales con venta de obras."
   }
 ]
