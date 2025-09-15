@@ -1,0 +1,23 @@
+[
+  {
+    "dia": "Miércoles",
+    "nombre": "Taller de Danza",
+    "hora": "18:00",
+    "lugar": "Casa de la Cultura",
+    "detalle": "Clase abierta de danza contemporánea para todo público."
+  },
+  {
+    "dia": "Viernes",
+    "nombre": "Concierto de Jazz",
+    "hora": "20:00",
+    "lugar": "Teatro Principal",
+    "detalle": "Banda local con invitados especiales."
+  },
+  {
+    "dia": "Domingo",
+    "nombre": "Feria de Arte",
+    "hora": "10:00",
+    "lugar": "Plaza Central",
+    "detalle": "Exposición de artistas locales con venta de obras."
+  }
+]
