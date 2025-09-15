@@ -1,55 +1,71 @@
+// ====== Cargar actividades desde actividades.json ======
 async function cargarActividades() {
-  const resp = await fetch('actividades.json');
-  const data = await resp.json();
+  try {
+    const respuesta = await fetch("actividades.json");
+    if (!respuesta.ok) {
+      throw new Error("No se pudo cargar actividades.json");
+    }
 
-  const contenedor = document.getElementById('cartelera');
-  contenedor.innerHTML = '';
+    const datos = await respuesta.json();
+    const cartelera = document.getElementById("cartelera");
 
-  const dias = ["Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+    // Vaciar contenido por si se recarga
+    cartelera.innerHTML = "";
 
-  dias.forEach(dia => {
-    const divDia = document.createElement('div');
-    divDia.classList.add('dia');
-    divDia.innerHTML = `<h2>${dia}</h2>`;
+    // Recorre los días
+    Object.keys(datos).forEach(dia => {
+      const divDia = document.createElement("div");
+      divDia.classList.add("dia");
 
-    const actividadesDia = data.filter(act => act.dia === dia);
+      const tituloDia = document.createElement("h2");
+      tituloDia.textContent = "🗓 " + dia;
+      divDia.appendChild(tituloDia);
 
-    actividadesDia.forEach(act => {
-      const divAct = document.createElement('div');
-      divAct.classList.add('actividad');
-      divAct.textContent = `🗓 ${act.nombre}  ⏰ ${act.hora}  📍 ${act.lugar}`;
+      // Recorre actividades del día
+      datos[dia].forEach(act => {
+        const divAct = document.createElement("div");
+        divAct.classList.add("actividad");
+        divAct.innerHTML = `
+          <strong>${act.titulo}</strong><br>
+          ⏰ ${act.hora} <br>
+          📍 ${act.lugar}
+        `;
 
-      divAct.addEventListener('click', () => mostrarDetalle(act));
-      divDia.appendChild(divAct);
+        // Evento para abrir modal con detalle
+        divAct.addEventListener("click", () => {
+          document.getElementById("modal-titulo").textContent = act.titulo;
+          document.getElementById("modal-hora").textContent = "⏰ " + act.hora;
+          document.getElementById("modal-lugar").textContent = "📍 " + act.lugar;
+          document.getElementById("modal-detalle").textContent = act.detalle;
+          document.getElementById("modal").style.display = "block";
+        });
+
+        divDia.appendChild(divAct);
+      });
+
+      cartelera.appendChild(divDia);
     });
 
-    contenedor.appendChild(divDia);
+  } catch (error) {
+    console.error("Error cargando actividades:", error);
+    document.getElementById("cartelera").innerHTML = "<p>No se pudo cargar la cartelera.</p>";
+  }
+}
+
+// ====== Modal ======
+document.addEventListener("DOMContentLoaded", () => {
+  cargarActividades();
+
+  const modal = document.getElementById("modal");
+  const cerrar = document.getElementById("cerrar");
+
+  cerrar.addEventListener("click", () => {
+    modal.style.display = "none";
   });
-}
 
-function mostrarDetalle(actividad) {
-  document.getElementById('modal-titulo').textContent = actividad.nombre;
-  document.getElementById('modal-hora').textContent = "⏰ " + actividad.hora;
-  document.getElementById('modal-lugar').textContent = "📍 " + actividad.lugar;
-  document.getElementById('modal-detalle').textContent = actividad.detalle;
-
-  document.getElementById('modal').style.display = "block";
-}
-
-document.getElementById('cerrar').onclick = function() {
-  document.getElementById('modal').style.display = "none";
-};
-
-window.onclick = function(event) {
-  if (event.target === document.getElementById('modal')) {
-    document.getElementById('modal').style.display = "none";
-  }
-};
-
-cargarActividades();
-
-    document.getElementById('modal').style.display = "none";
-  }
-};
-
-cargarActividades();
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
