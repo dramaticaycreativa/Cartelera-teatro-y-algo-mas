@@ -1,91 +1,24 @@
-{
-  "Miércoles": [
-    {
-      "titulo": "Jin-Roh: The Wolf Brigade",
-      "hora": "21:15",
-      "lugar": "Cine Auditorium Julio Lencina (casi esq. Italia, S.S. de Jujuy)",
-      "detalle": "El Cinematógrafo PRESENTA: Jin-Roh: The Wolf Brigade (1999, 98 min, +13 años). Dir: Hiroyuki Okiura. Una profunda reflexión sobre obediencia, tragedia y humanidad en un Japón alternativo militarizado. Parte del ciclo 'KAGE ANIME, Septiembre en las Sombras'. Entradas: Gral. $2000 | Personas con discapacidad: sin cargo. Cosplay libre. Tel: 3884632908."
-    }
-  ],
-  "Jueves": [
-    {
-      "titulo": "Taller de escritura: Ni diablos ni yaguareté, la escritura tiene otra magia",
-      "hora": "19:00",
-      "lugar": "El Inmigrante, Club de Arte (Independencia 1016)",
-      "detalle": "Coordinado por Hen Girondo. Géneros: poesía, minificción, cuento. Incluye lectura de autores, escritura in situ y devolución técnica. Cupo: 12 personas. Actividad arancelada. Horario fijo: jueves de 19 a 21 hs."
-    },
-    {
-      "titulo": "Ciclo de cine: Fargo",
-      "hora": "21:00",
-      "lugar": "Teatro El Pasillo, José de la Iglesia 1190",
-      "detalle": "Un vendedor de autos con problemas financieras decide secuestrar a su esposa para pedirle dinero a su suegro. Presenta: Bruno Gareca."
-    },
-    {
-      "titulo": "Estreno nacional: Suerte de Pinos",
-      "hora": "21:15",
-      "lugar": "Cine Auditorium Julio Lencina (casi esq. Italia, S.S. de Jujuy)",
-      "detalle": "Dir. Lorena Muñoz (2025, 89 min, +13). En un pueblo remoto de España, un doble femicidio silenciado sale a la luz. Entradas: Gral. $2800 | Jubilados/Estudiantes $1400 | Discapacidad $0. Tel: 3884632908. Trailer: https://www.youtube.com/watch?v=3X_VAo6XSAA"
-    }
-  ],
-  "Viernes": [
-    {
-      "titulo": "Cristian: Mi historia, 25 años de música",
-      "hora": "21:00",
-      "lugar": "Teatro Mitre",
-      "detalle": "Show especial celebrando 25 años de trayectoria."
-    },
-    {
-      "titulo": "Ángelo Aranda",
-      "hora": "21:30",
-      "lugar": "Teatro Mitre",
-      "detalle": "Presentación musical en vivo."
-    },
-    {
-      "titulo": "Historias de Papel (Estreno Nacional)",
-      "hora": "21:15",
-      "lugar": "Cine Auditorium Julio Lencina (casi esq. Italia, S.S. de Jujuy)",
-      "detalle": "Dir. Florencia Nizzo (2025, 80 min, +13). Cinco pequeñas historias que se entrelazan en momentos decisivos de la vida. Con Juan Gil Navarro, Hugo Arana, Gloria Carrá, Rita Terranova y más. Entradas: Gral. $2800 | Jubilados/Estudiantes $1400 | Discapacidad $0. Trailer: https://www.youtube.com/watch?v=VDncM62m7Gc"
-    },
-    {
-      "titulo": "Stand Up: ¿Yo? Argentina La Vecina",
-      "hora": "22:00",
-      "lugar": "Teatro El Pasillo, José de la Iglesia 1190",
-      "detalle": "Show de stand-up. Reservas: 3886000736. Entradas en Entradaweb."
-    }
-  ],
-  "Sábado": [
-    {
-      "titulo": "Sueños de Luz",
-      "hora": "18:00",
-      "lugar": "Teatro Mitre",
-      "detalle": "Función especial."
-    },
-    {
-      "titulo": "Historias de Papel (2ª función)",
-      "hora": "21:15",
-      "lugar": "Cine Auditorium Julio Lencina (casi esq. Italia, S.S. de Jujuy)",
-      "detalle": "Repetición de la función del estreno nacional. Dir. Florencia Nizzo. Entradas: Gral. $2800 | Jubilados/Estudiantes $1400 | Discapacidad $0."
-    },
-    {
-      "titulo": "La Iniciación, de Jorge Acamme",
-      "hora": "21:30",
-      "lugar": "Teatro El Pasillo | Sala Carime Estopiñán, Av. José de la Iglesia 1190",
-      "detalle": "Versión teatral del cuento 'La Iniciación' de 'Antiguos cuentos de brujas' inspirado en Macbeth de William Shakespeare. Duración: 50 min. +16 años. Entrada general: $12.000."
-    }
-  ],
-  "Domingo": [
-    {
-      "titulo": "Infanto Rock en Concierto",
-      "hora": "20:00",
-      "lugar": "Teatro Mitre, Sala Mayor",
-      "detalle": "Concierto especial para todo público."
-    },
-    {
-      "titulo": "Aneurisma (Trío Grunge, tributo a Nirvana)",
-      "hora": "19:00",
-      "lugar": "Teatro El Pasillo | Sala Carime Estopiñán, Av. José de la Iglesia 1190",
-      "detalle": "Tributo al mítico 'Unplugged in New York' de Nirvana. Duración: 50 min. Entrada general: $10.000. +16 años."
-    }
-  ]
-}
+[
+  {
+    "dia": "Miércoles",
+    "nombre": "Taller de Danza",
+    "hora": "18:00",
+    "lugar": "Casa de la Cultura",
+    "detalle": "Clase abierta de danza contemporánea para todo público."
+  },
+  {
+    "dia": "Viernes",
+    "nombre": "Concierto de Jazz",
+    "hora": "20:00",
+    "lugar": "Teatro Principal",
+    "detalle": "Banda local con invitados especiales."
+  },
+  {
+    "dia": "Domingo",
+    "nombre": "Feria de Arte",
+    "hora": "10:00",
+    "lugar": "Plaza Central",
+    "detalle": "Exposición de artistas locales con venta de obras."
+  }
+]
 
