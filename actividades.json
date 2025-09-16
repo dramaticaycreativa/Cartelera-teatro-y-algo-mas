@@ -1,5 +1,5 @@
 {
-   "Miércoles": [
+  "Miércoles": [
     {
       "titulo": "Jin-Roh: The Wolf Brigade",
       "hora": "21:15",
@@ -7,7 +7,7 @@
       "detalle": "El Cinematógrafo PRESENTA: Jin-Roh: The Wolf Brigade (1999, 98 min, +13 años). Dir: Hiroyuki Okiura. Una profunda reflexión sobre obediencia, tragedia y humanidad en un Japón alternativo militarizado. Parte del ciclo 'KAGE ANIME, Septiembre en las Sombras'. Entradas: Gral. $2000 | Personas con discapacidad: sin cargo. Cosplay libre. Tel: 3884632908."
     }
   ],
-    "Jueves": [
+  "Jueves": [
     {
       "titulo": "Taller de escritura: Ni diablos ni yaguareté, la escritura tiene otra magia",
       "hora": "19:00",
@@ -27,7 +27,7 @@
       "detalle": "Dir. Lorena Muñoz (2025, 89 min, +13). En un pueblo remoto de España, un doble femicidio silenciado sale a la luz. Entradas: Gral. $2800 | Jubilados/Estudiantes $1400 | Discapacidad $0. Tel: 3884632908. Trailer: https://www.youtube.com/watch?v=3X_VAo6XSAA"
     }
   ],
-    "Viernes": [
+  "Viernes": [
     {
       "titulo": "Cristian: Mi historia, 25 años de música",
       "hora": "21:00",
@@ -35,10 +35,10 @@
       "detalle": "Show especial celebrando 25 años de trayectoria."
     },
     {
-      "titulo": "Musica en el Tizon: Samba Pue",
-      "hora": "21:00",
-      "lugar": "Centro Cultural Hector Tizon- Hipolito Yrigoyen 1302",
-      "detalle": "Presentación musical en vivo. Entradas anticipadas al 3885914204"
+      "titulo": "Ángelo Aranda",
+      "hora": "21:30",
+      "lugar": "Teatro Mitre",
+      "detalle": "Presentación musical en vivo."
     },
     {
       "titulo": "Historias de Papel (Estreno Nacional)",
@@ -73,7 +73,7 @@
       "detalle": "Versión teatral del cuento 'La Iniciación' de 'Antiguos cuentos de brujas' inspirado en Macbeth de William Shakespeare. Duración: 50 min. +16 años. Entrada general: $12.000."
     }
   ],
-   "Domingo": [
+  "Domingo": [
     {
       "titulo": "Infanto Rock en Concierto",
       "hora": "20:00",
