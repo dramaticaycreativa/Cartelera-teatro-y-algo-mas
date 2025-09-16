@@ -1,14 +1,16 @@
 {
-  "Miércoles": [
+   [
     {
+      "dia": "Miércoles",
       "titulo": "Jin-Roh: The Wolf Brigade",
       "hora": "21:15",
       "lugar": "Cine Auditorium Julio Lencina (casi esq. Italia, S.S. de Jujuy)",
       "detalle": "El Cinematógrafo PRESENTA: Jin-Roh: The Wolf Brigade (1999, 98 min, +13 años). Dir: Hiroyuki Okiura. Una profunda reflexión sobre obediencia, tragedia y humanidad en un Japón alternativo militarizado. Parte del ciclo 'KAGE ANIME, Septiembre en las Sombras'. Entradas: Gral. $2000 | Personas con discapacidad: sin cargo. Cosplay libre. Tel: 3884632908."
     }
   ],
-  "Jueves": [
+   [
     {
+      "dia": "Jueves",
       "titulo": "Taller de escritura: Ni diablos ni yaguareté, la escritura tiene otra magia",
       "hora": "19:00",
       "lugar": "El Inmigrante, Club de Arte (Independencia 1016)",
@@ -27,8 +29,9 @@
       "detalle": "Dir. Lorena Muñoz (2025, 89 min, +13). En un pueblo remoto de España, un doble femicidio silenciado sale a la luz. Entradas: Gral. $2800 | Jubilados/Estudiantes $1400 | Discapacidad $0. Tel: 3884632908. Trailer: https://www.youtube.com/watch?v=3X_VAo6XSAA"
     }
   ],
-  "Viernes": [
+  [
     {
+      "dia": "Viernes",
       "titulo": "Cristian: Mi historia, 25 años de música",
       "hora": "21:00",
       "lugar": "Teatro Mitre",
@@ -53,8 +56,9 @@
       "detalle": "Show de stand-up. Reservas: 3886000736. Entradas en Entradaweb."
     }
   ],
-  "Sábado": [
+   [
     {
+      "dia": "Sábado",
       "titulo": "Sueños de Luz",
       "hora": "18:00",
       "lugar": "Teatro Mitre",
@@ -73,8 +77,9 @@
       "detalle": "Versión teatral del cuento 'La Iniciación' de 'Antiguos cuentos de brujas' inspirado en Macbeth de William Shakespeare. Duración: 50 min. +16 años. Entrada general: $12.000."
     }
   ],
-  "Domingo": [
+   [
     {
+      "dia": "Domingo",
       "titulo": "Infanto Rock en Concierto",
       "hora": "20:00",
       "lugar": "Teatro Mitre, Sala Mayor",
