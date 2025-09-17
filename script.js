@@ -20,6 +20,7 @@ fetch("actividades.json")
 
           // Modal de detalle
           divAct.addEventListener("click", () => {
+            console.log("Click detectado en:", act.titulo); // DEBUG
             document.getElementById("modal-titulo").textContent = " 📅 " + act.titulo || "";
             document.getElementById("modal-hora").textContent = "⏰ " + (act.hora || "");
             document.getElementById("modal-lugar").textContent = "📍 " + (act.lugar || "");
@@ -33,15 +34,19 @@ fetch("actividades.json")
               modalMapa.innerHTML = "";
             }
 
-            document.getElementById("modal").style.display = "block";
+            const modal = document.getElementById("modal");
+            modal.style.display = "block";
+            console.log("Modal abierto"); // DEBUG
           });
         });
       }
     });
   });
+  .catch(err => console.error("Error cargando actividades.json:", err));
 
 // Botón cerrar modal
 document.getElementById("cerrar").addEventListener("click", () => {
+  console.log("Cerrando modal"); // DEBUG
   document.getElementById("modal").style.display = "none";
 });
 // Cerrar modal al hacer click fuera
@@ -49,5 +54,6 @@ window.addEventListener("click", (e) => {
   const modal = document.getElementById("modal");
   if (e.target === modal) {
     modal.style.display = "none";
+    console.log("Modal cerrado clic afuera"); // DEBUG
   }
 });
