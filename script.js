@@ -20,10 +20,10 @@ fetch("actividades.json")
 
           // Modal de detalle
           divAct.addEventListener("click", () => {
-            document.getElementById("modal-titulo").textContent = " 📅 " + act.titulo;
-            document.getElementById("modal-hora").textContent = "⏰ " + act.hora;
-            document.getElementById("modal-lugar").textContent = "📍 " + act.lugar;
-            document.getElementById("modal-detalle").textContent = act.detalle;
+            document.getElementById("modal-titulo").textContent = " 📅 " + act.titulo || "";
+            document.getElementById("modal-hora").textContent = "⏰ " + (act.hora || "");
+            document.getElementById("modal-lugar").textContent = "📍 " + (act.lugar || "");
+            document.getElementById("modal-detalle").textContent = act.detalle || "";
 
             // Si hay mapa, lo mostramos
             const modalMapa = document.getElementById("modal-mapa");
