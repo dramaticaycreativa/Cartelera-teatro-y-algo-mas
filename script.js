@@ -12,7 +12,8 @@ fetch("actividades.json")
   .then(data => {
     dias.forEach(dia => {
       const id = normalizarId(dia); // ejemplo: "Miércoles" -> "miercoles"
-      const contenedor = document.getElementById(dia.toLowerCase());
+      const contenedor = document.getElementById(id);
+      
       if (contenedor && data[dia]) {
         data[dia].forEach(act => {
           const divAct = document.createElement("div");
