@@ -44,5 +44,3 @@ fetch("actividades.json")
 document.getElementById("cerrar").addEventListener("click", () => {
   document.getElementById("modal").style.display = "none";
 });
-
-cargarActividades();
