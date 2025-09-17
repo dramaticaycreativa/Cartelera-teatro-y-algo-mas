@@ -44,3 +44,10 @@ fetch("actividades.json")
 document.getElementById("cerrar").addEventListener("click", () => {
   document.getElementById("modal").style.display = "none";
 });
+// Cerrar modal al hacer click fuera
+window.addEventListener("click", (e) => {
+  const modal = document.getElementById("modal");
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
