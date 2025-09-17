@@ -1,11 +1,17 @@
 // Definir los días en orden
 const dias = ["Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
 
+// Función para normalizar (quita tildes y pone en minúsculas)
+function normalizarId(dia) {
+  return dia.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
 // Cargar actividades.json
 fetch("actividades.json")
   .then(res => res.json())
   .then(data => {
     dias.forEach(dia => {
+      const id = normalizarId(dia); // ejemplo: "Miércoles" -> "miercoles"
       const contenedor = document.getElementById(dia.toLowerCase());
       if (contenedor && data[dia]) {
         data[dia].forEach(act => {
@@ -25,21 +31,13 @@ fetch("actividades.json")
             document.getElementById("modal-lugar").textContent = "📍 " + (act.lugar || "");
             document.getElementById("modal-detalle").textContent = act.detalle || "";
 
-            // Si hay mapa, lo mostramos
-            const modalMapa = document.getElementById("modal-mapa");
-            if (act.mapa) {
-              modalMapa.innerHTML = `<iframe src="${act.mapa}" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`;
-            } else {
-              modalMapa.innerHTML = "";
-            }
-
             document.getElementById("modal").style.display = "block";
           });
         });
       }
     });
   });
-
+ .catch(err => console.error("Error cargando actividades.json:", err));
 // Botón cerrar modal
 document.getElementById("cerrar").addEventListener("click", () => {
   document.getElementById("modal").style.display = "none";
