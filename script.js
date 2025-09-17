@@ -1,49 +1,48 @@
-async function cargarActividades() {
-  const resp = await fetch('actividades.json');
-  const data = await resp.json();
+// Definir los días en orden
+const dias = ["Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
 
-  const contenedor = document.getElementById('cartelera');
-  contenedor.innerHTML = '';
+// Cargar actividades.json
+fetch("actividades.json")
+  .then(res => res.json())
+  .then(data => {
+    dias.forEach(dia => {
+      const contenedor = document.getElementById(dia.toLowerCase());
+      if (contenedor && data[dia]) {
+        data[dia].forEach(act => {
+          const divAct = document.createElement("div");
+          divAct.classList.add("actividad");
+          divAct.innerHTML = `
+            <h3>📅 ${act.titulo}</h3>
+            <p>⏰ ${act.hora}</p>
+            <p>📍 ${act.lugar}</p>
+          `;
+          contenedor.appendChild(divAct);
 
-  const dias = ["Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+          // Modal de detalle
+          divAct.addEventListener("click", () => {
+            document.getElementById("modal-titulo").textContent = " 📅 " + act.titulo;
+            document.getElementById("modal-hora").textContent = "⏰ " + act.hora;
+            document.getElementById("modal-lugar").textContent = "📍 " + act.lugar;
+            document.getElementById("modal-detalle").textContent = act.detalle;
 
-  dias.forEach(dia => {
-    const divDia = document.createElement('div');
-    divDia.classList.add('dia');
-    divDia.innerHTML = `<h2>${dia}</h2>`;
+            // Si hay mapa, lo mostramos
+            const modalMapa = document.getElementById("modal-mapa");
+            if (act.mapa) {
+              modalMapa.innerHTML = `<iframe src="${act.mapa}" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`;
+            } else {
+              modalMapa.innerHTML = "";
+            }
 
-    const actividadesDia = data.filter(act => act.dia === dia);
-
-    actividadesDia.forEach(act => {
-      const divAct = document.createElement('div');
-      divAct.classList.add('actividad');
-      divAct.textContent = `📅 ${act.nombre}  ⏰ ${act.hora}  📍 ${act.lugar}`;
-
-      divAct.addEventListener('click', () => mostrarDetalle(act));
-      divDia.appendChild(divAct);
+            document.getElementById("modal").style.display = "block";
+          });
+        });
+      }
     });
-
-    contenedor.appendChild(divDia);
   });
-}
 
-function mostrarDetalle(actividad) {
-  document.getElementById('modal-titulo').textContent = "📅 " + actividad.nombre;
-  document.getElementById('modal-hora').textContent = "⏰ " + actividad.hora;
-  document.getElementById('modal-lugar').textContent = "📍 " + actividad.lugar;
-  document.getElementById('modal-detalle').textContent = actividad.detalle;
-
-  document.getElementById('modal').style.display = "block";
-}
-
-document.getElementById('cerrar').onclick = function() {
-  document.getElementById('modal').style.display = "none";
-};
-
-window.onclick = function(event) {
-  if (event.target === document.getElementById('modal')) {
-    document.getElementById('modal').style.display = "none";
-  }
-};
+// Botón cerrar modal
+document.getElementById("cerrar").addEventListener("click", () => {
+  document.getElementById("modal").style.display = "none";
+});
 
 cargarActividades();
